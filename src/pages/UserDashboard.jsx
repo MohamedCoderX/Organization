@@ -61,7 +61,7 @@ const currentMonth = `${currentDate.getFullYear()}-${String(currentDate.getMonth
       const orgref = doc(db,"organization" , "main");
        const orgsnap = await getDoc(orgref);
        if(orgsnap.exists()){
-         setamount(orgsnap.data().totalAmount);
+         setOrgBalance(orgsnap.data().totalAmount);
        }
      }
      org();

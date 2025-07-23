@@ -50,7 +50,7 @@ const handleReturn = async (txn) => {
         totalreturn: increment(txn.amount),
         messages: [
             ...(userData?.messages || []),
-            `You Have Returned the ${txn.amt}. Thank you! ${timestamp}`,
+            `You Have Returned the ${txn.amount}. Thank you! ${timestamp}`,
           ],
       });
     }
